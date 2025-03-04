@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <Label text="ระบบจองอุปกรณ์กีฬา" style="-fx-font-size: 18px;"/>
+    
+    <ListView fx:id="equipmentListView"/>
+    
+    <HBox spacing="10">
+        <Button text="จอง" fx:id="bookButton" onAction="#handleBook"/>
+        <Button text="ยกเลิกการจอง" fx:id="cancelButton" onAction="#handleCancel"/>
+    </HBox>
+</VBox>
